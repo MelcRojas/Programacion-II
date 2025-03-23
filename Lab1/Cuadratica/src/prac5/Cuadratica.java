@@ -4,26 +4,22 @@ import java.util.Scanner;
 
 public class Cuadratica {
 
-	// Función para calcular el discriminante
 	public static double getDiscriminante(double a, double b, double c) {
 		return b * b - 4 * a * c;
 	}
 
-	// Función para calcular la primera raíz
 	public static Double getRaiz1(double a, double b, double discriminante) {
 		if (discriminante < 0)
 			return null;
 		return (-b + Math.sqrt(discriminante)) / (2 * a);
 	}
 
-	// Función para calcular la segunda raíz
 	public static Double getRaiz2(double a, double b, double discriminante) {
 		if (discriminante < 0)
 			return null;
 		return (-b - Math.sqrt(discriminante)) / (2 * a);
 	}
 
-	// Función para resolver la ecuación cuadrática
 	public static void resolverEcuacion(double a, double b, double c) {
 		double discriminante = getDiscriminante(a, b, c);
 
