@@ -5,7 +5,6 @@ public class D implements IA, IB {
     public int y;
     public int z;
 
-    // Constructor
     public D(int x, int y, int z) {
         this.x = x;
         this.y = y;
